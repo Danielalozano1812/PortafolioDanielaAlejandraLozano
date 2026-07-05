@@ -505,15 +505,22 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 }
 .hero__photo-accent {
   position: absolute;
- bottom: 38px;
-left: 18px;
-  transform: rotate(-8deg);
-  font-family: var(--script);
-  font-weight: 600;
-  font-size: 1.55rem;
-  color: var(--rose);
-  z-index: 3;
+  bottom: 46px;
+  left: 22px;
+  transform: rotate(-6deg);
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--cherry);
+  padding: 0.65rem 0.9rem;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(101, 0, 30, 0.22);
+  z-index: 4;
   white-space: nowrap;
+}
 }
 
 /* Marquee */
