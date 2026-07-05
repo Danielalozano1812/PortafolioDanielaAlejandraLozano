@@ -2324,24 +2324,38 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
     transition-duration: 0.01ms !important;
   }
 }
-/* Ajuste móvil: evitar que la tarjeta tape el rostro en el hero */
-@media (max-width: 768px) {
+/* Ajuste fuerte móvil hero - evitar que las tarjetas tapen el rostro */
+@media screen and (max-width: 900px) {
+  .hero__photo {
+    position: relative !important;
+  }
+
   .hero__photo-stat {
-    top: 55% !important;
-    right: 6% !important;
-    transform: translateY(-50%) scale(0.82) !important;
-    max-width: 150px !important;
+    position: absolute !important;
+    top: auto !important;
+    bottom: 19% !important;
+    right: 5% !important;
+    left: auto !important;
+    transform: scale(0.78) !important;
+    z-index: 4 !important;
+    max-width: 145px !important;
   }
 
   .hero__photo-badge {
-    top: 8% !important;
-    left: 5% !important;
-    transform: rotate(-4deg) scale(0.9) !important;
+    position: absolute !important;
+    top: 7% !important;
+    left: 6% !important;
+    right: auto !important;
+    transform: rotate(-5deg) scale(0.82) !important;
+    z-index: 4 !important;
   }
 
   .hero__photo-accent {
-    bottom: 12% !important;
+    position: absolute !important;
+    bottom: 10% !important;
     left: 5% !important;
-    font-size: 0.9rem !important;
+    right: auto !important;
+    transform: rotate(-8deg) scale(0.82) !important;
+    z-index: 4 !important;
   }
 }
