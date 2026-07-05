@@ -475,8 +475,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 }
 .hero__photo-stat {
   position: absolute;
-  top: 72px;
-  right: 10px;
+  top: 88px;
+  right: 38px;
   background: var(--cream);
   border: 1px solid rgba(101, 0, 30, 0.12);
   padding: 0.95rem 1.25rem;
