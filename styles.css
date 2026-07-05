@@ -475,7 +475,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 }
 .hero__photo-stat {
   position: absolute;
-  top: 60px; right: -55px;
+  top: 72px;
+  right: 10px;
   background: var(--cream);
   border: 1px solid rgba(101, 0, 30, 0.12);
   padding: 0.95rem 1.25rem;
@@ -504,7 +505,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 }
 .hero__photo-accent {
   position: absolute;
-  bottom: 50px; left: -65px;
+ bottom: 38px;
+left: 18px;
   transform: rotate(-8deg);
   font-family: var(--script);
   font-weight: 600;
@@ -2324,38 +2326,28 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
     transition-duration: 0.01ms !important;
   }
 }
-/* Ajuste fuerte móvil hero - evitar que las tarjetas tapen el rostro */
-@media screen and (max-width: 900px) {
-  .hero__photo {
-    position: relative !important;
-  }
-
+/* Ajuste móvil hero: evitar que las etiquetas tapen el rostro */
+@media screen and (max-width: 768px) {
   .hero__photo-stat {
-    position: absolute !important;
-    top: auto !important;
-    bottom: 19% !important;
-    right: 5% !important;
-    left: auto !important;
-    transform: scale(0.78) !important;
-    z-index: 4 !important;
+    top: 62% !important;
+    right: 4% !important;
+    transform: rotate(2deg) scale(0.72) !important;
+    transform-origin: center !important;
     max-width: 145px !important;
   }
 
   .hero__photo-badge {
-    position: absolute !important;
     top: 7% !important;
-    left: 6% !important;
-    right: auto !important;
-    transform: rotate(-5deg) scale(0.82) !important;
-    z-index: 4 !important;
+    left: 5% !important;
+    transform: rotate(-4deg) scale(0.78) !important;
+    transform-origin: left center !important;
   }
 
   .hero__photo-accent {
-    position: absolute !important;
-    bottom: 10% !important;
+    bottom: 8% !important;
     left: 5% !important;
-    right: auto !important;
-    transform: rotate(-8deg) scale(0.82) !important;
-    z-index: 4 !important;
+    transform: rotate(-8deg) scale(0.78) !important;
+    transform-origin: left center !important;
+    max-width: 180px !important;
   }
 }
