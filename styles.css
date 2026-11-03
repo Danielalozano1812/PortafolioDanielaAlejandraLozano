@@ -2416,3 +2416,92 @@ left: 18px;
   }
 }
 
+
+/* ==========================================
+   DIACO - GALERÍA VISUAL
+   ========================================== */
+
+.diaco-gallery {
+  width: 100%;
+  margin-top: 55px;
+  text-align: center;
+}
+
+.diaco-gallery__head {
+  margin-bottom: 30px;
+}
+
+.diaco-gallery__title {
+  font-family: var(--sans);
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--cherry);
+  margin-bottom: 12px;
+}
+
+.diaco-gallery__title em {
+  font-family: var(--script);
+  font-weight: 600;
+  color: var(--rose);
+  font-style: normal;
+}
+
+.diaco-gallery__intro {
+  font-family: var(--serif);
+  font-size: 1rem;
+  color: var(--charcoal-s);
+}
+
+.diaco-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.diaco-card {
+  background: #fff7f8;
+  border: 1px solid #f2cbd5;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diaco-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.diaco-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 506 / 680;
+  object-fit: cover;
+}
+
+.diaco-card figcaption {
+  padding: 18px;
+}
+
+.diaco-card figcaption strong {
+  display: block;
+  font-family: var(--sans);
+  color: var(--cherry);
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.diaco-card figcaption span {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--charcoal-s);
+}
+
+@media (max-width: 768px) {
+  .diaco-gallery__grid {
+    grid-template-columns: 1fr;
+  }
+}
