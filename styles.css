@@ -2349,6 +2349,55 @@ left: 18px;
     transform: rotate(-8deg) scale(0.78) !important;
     transform-origin: left center !important;
     max-width: 180px !important;
+   
   }
+   
+/* DIACO - Pilares creativos */
+
+.diaco-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+  text-align: left;
+}
+
+.diaco-pillar {
+  padding: 28px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(101, 0, 30, 0.10);
+}
+
+.diaco-pillar__num {
+  display: block;
+  color: #b65c78;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.diaco-pillar h4 {
+  font-family: Montserrat, sans-serif;
+  color: #65001e;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.diaco-pillar p {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .diaco-pillars {
+    grid-template-columns: 1fr;
+  }
+}
+
 }
 /* deploy refresh */
