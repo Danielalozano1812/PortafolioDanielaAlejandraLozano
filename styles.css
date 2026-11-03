@@ -2373,6 +2373,83 @@ left: 18px;
   text-align: left;
 }
 
+/* ==========================================
+   EXPERIENCIA - TARJETAS ACTUALES Y MARCAS
+   ========================================== */
+
+/* Organizar las cinco experiencias */
+.experience .timeline {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.experience .timeline__card {
+  min-width: 0;
+}
+
+/* Brutal Films y SpicyMinds en vinotinto */
+.experience .timeline__card--current {
+  background: var(--cherry);
+  color: var(--cream);
+}
+
+.experience .timeline__card--current h3,
+.experience .timeline__card--current p {
+  color: var(--cream);
+}
+
+.experience .timeline__card--current .timeline__year,
+.experience .timeline__card--current .timeline__role {
+  color: var(--pink);
+}
+
+/* Marcas dentro de las tarjetas */
+.timeline__brands {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.timeline__brands-title {
+  display: block;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 12px;
+}
+
+.timeline__brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.timeline__brands-list span {
+  padding: 7px 12px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Adaptación para celular */
+@media (max-width: 700px) {
+  .experience .timeline {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 .diaco-pillar {
   background: #fff7f8;
   border: 1px solid #f2cbd5;
